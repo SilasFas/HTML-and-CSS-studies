@@ -1,2 +1,3 @@
 # HTML and CSS studies
-html and css exercises
+
+Some HTML and CSS studies that I've been doing so far
