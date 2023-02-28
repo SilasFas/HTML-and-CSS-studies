@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes Externas</title>
+
+    <style>
+        @font-face {
+            font-family: 'PolarSnow';
+            src: url('fonts/Polar Snow.otf') format('opentype'), url('fonts/Polar Snow.ttf') format('truetype');
+            font-weight: normal;
+            font-style: italic;
+        }
+
+
+        @font-face {
+            font-family: 'Hello';
+            src: url('fonts/hello honey.otf') format('opentype');
+
+
+        }
+
+        @import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
+
+        /*
+        TIPOS DE FORMAT
+        - opentype (otf)
+        - truetype (ttf)
+        - embedded-opentype
+        - truetype-aat (apple advanced typography)
+        - svg 
+        */
+        body {
+            text-align: justify;
+        }
+
+        p {
+            font-family: 'Hello', Helvetica, sans-serif;
+            font-size: 2em;
+        }
+
+        h1 {
+            font-family: 'PolarSnow', Times, serif;
+            font-size: em;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Fontes Externas</h1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi, fugit fuga. Rem ea, odit consequuntur molestias
+        dolores omnis. Molestias modi aliquid aperiam asperiores error. Impedit facere architecto tempora magnam
+        mollitia.</p>
+
+    <p style="font-family: 'Creepster', cursive; font-size: 22px;">Lorem ipsum dolor, sit amet consectetur adipisicing
+        elit. Dolores velit nobis ipsum debitis beatae, dolore eaque sapiente, deserunt eveniet aspernatur magnam
+        cupiditate eos distinctio possimus maiores blanditiis molestiae explicabo laborum.</p>
+</body>
+
+</html>

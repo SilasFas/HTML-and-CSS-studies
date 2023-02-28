@@ -1,0 +1,339 @@
+AI  - chat gpt
+======================================================
+HTML5 + CSS3
+
+Bíbliografias e livros: 
+
+COMANDOS: HTML
+
+<H1></H1> = colocar um titulo
+<H1>Ola, Mundo!</H1>
+
+<p></p> = colocar paragrafo
+<p>Já me livrei da maldição</p>
+<hr> = horizontal role
+<br> break role
+
+&lt; = less than <
+&gt; = greater than >
+
+<!-- --> = colocar comentários
+<!--texto-->
+
+&#x = Comando para colocar emoji
+Esse é  o site para pegar emojis: https://emojipedia.org/
+
+<img> = carregar imagem
+<img src="" alt="">
+
+link:favicon = colocar um icone
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+<b></b> = colocar texto em negrito (não semântico)
+<strong></strong> = colocar texto em negrito (semântico)
+
+<I></I> = colocar texto em itálico (não semântico)
+<em></em> = coloca o texto em itálico (semântico)
+
+<mark></mark> = coloca um marca texto
+
+<big>texto grande</big> (esta ficando obsoleto)
+<small>texto pequeno</small>
+
+<del>um texto como excluído</del>
+
+<ins>um texto como inserido</ins>
+<u>sublinhado</u> (esta ficando obsoleto)
+
+<sup></sup> Texto sobrescrito
+<sub></sub> Texto subescrito
+
+<code></code> código fonte - deixar o texto com a mesma largura (fonte monoespaçada)
+
+<pre></pre> Text in a <pre> element is displayed in a fixed-width font, and the text preserves both spaces and line breaks. The text will be displayed exactly as written in the HTML source code.
+
+<q></q> quote - coloca citação
+
+<abbr title="">texto</abbr> coloca abreviações
+<abbr title="Hypertext Markup Language">HTML</abbr> e <abbr
+
+<bdo dir="rtl"></bdo> Deixa o texto invertido
+
+LISTAS
+
+<ol></ol> ordered list
+<li></li> list item
+<ol type="1" start="5"> </ol>
+
+<ul></ul> unordered list
+<li></li> list item
+
+<dl></dl> Definition List
+<dt>Termo</dt>
+<dd>Definição</dd>
+======================================================
+**Capitulo: 10**
+<a href=""></a> coloca links no site e links para baixar arquivos
+<a href="https://github.com/SilasFas">repositório público no gitHub</a>
+
+<a href="" target="_blank" rel="external"></a> coloca links no site abrindo ele em uma nova pagina (recomendado)
+
+../ escolhe a pasta anterior para voltar o link (volte uma pasta)
+======================================================
+Capitulo: 11
+<picture></picture> coloca imagens, porém com várias sources. Adaptando as imagens de acordo com o dispositivo que esta sendo exibido.
+
+<picture>    
+    <source media="(max-width: 750px)" srcset="imagens/photo-p.png" type="image/png">
+
+    <source media="(max-width: 1050px)" srcset="imagens/photo-m.png" type="image/png">
+    
+    <img src="imagens/photo-g.png" alt="imagem flexível">
+</picture>
+
+<p>Vamos aprender a reproduzir áudios em HTML5</p>
+    <audio src="midia/two-of-us.mp3" controls></audio>
+
+*Videos formatos* 
+MP4, (.mp4 - .m4v)
+webm
+ogg - OGV
+<video src=""></video>
+
+Coloca varios video com formatos diferêntes
+<video controls>
+<source src="" type="">
+</video>
+======================================================
+COMANDO: CSS
+
+Estilo interno/local
+Estilo externo
+Estilo inline
+
+<style></style> Colocar estilos internos/locais
+<link rel="stylesheet" href="style.css"> Coloca estilos externos
+/* */ = colocar comentários
+
+Capitulo: 13 - Psicologia das cores / Harmonia de cores CSS
+
+cores primárias: amarelo vermelho azul
+cores secundárias: laranja violeta verde
+cores terciárias: combinaçoes de primárias com secundárias
+
+* { }; - coloca uma configuração global
+
+background-image: linear-gradient(to right, white, blue); coloca gradiente
+
+background-image: radial-gradient( circle, red, green);
+coloca gradiente gradiente circular
+
+background-attachment: fixed; -  fundo fixo
+=========================================
+Capitulo: 14 - Fontes da letras (Tipografia)
+
+CSS Web Safe Fonts - pesquisar no W3school
+
+font-family: ;
+
+Sempre termine a fonte com *sans-serif* pois esta fonte tem em todos os dispositivos.
+
+        Medidas Absolutas  
+        cm, mm, in, px, pt, pc
+        (centimentro milimetro polegada pixel ponto paica)    
+
+        Medidas Relativas
+        em, ex, rem, vw, vh, %
+        (altura m - altura x - em relativo ao root - largura da 	viewport - altura da viewport)
+        (referência o tamanho do 'm' e do 'x')
+        
+        
+        NOTA: A RECOMENDAÇÃO DA W3CÉ USAR  O 'px' E O 	'em' 
+	16px = 1em
+
+peso = faz a fonte ficar mais magra ou mais gordinha
+	font-weight:  ; 
+	/*light  - normal  - bold  - bolder*/
+
+estilo = deixa o texto italico oblicuo etc
+	font-style: ;
+
+sublinhado = coloca texto com siblinhado
+	text-decoration: underline;
+
+	    font-family: 'Times New Roman', Times, serif;
+            font-weight: bolder;
+            font-size: 2em;
+            font-style: italic;
+
+/*shorthand font
+            ordem = font-style font-weight font-size font-family
+	    font: italic bolder 3em sans-serif;
+
+COLOCANDO FONTES EXTERNAS BAIXADAS
+ir do dafont
+escolher a font 
+baixar e descompactar 
+colocar na pasta do html e usar a regra:
+@font-face {
+            font-family: ;
+            src: url();
+        } 
+
+        @font-face {
+            font-family: 'PolarSnow';
+            src: url('Polar Snow.otf') format('opentype'), url('Polar Snow.ttf') format('truetype');
+            font-weight: normal;
+            font-style: italic;
+
+        /*
+        TIPOS DE FORMAT
+        - opentype (otf)
+        - truetype (ttf)
+        - embedded-opentype
+        - truetype-aat (apple advanced typography)
+        - svg 
+        */
+==================================================
+Capitulo: 15
+
+Seletores Personalizados
+
+em HTML é id    = em CSS é # (só pode um elemento)
+em HTML é class = CSS é .    ( pode vários elementos)
+
+pseudo-classes( : )
+Está relacionada á um estado de um elemento ou uma classe
+
+>>>Alguns mais usados
+: hover
+: visited
+:active
+
+Pseudo-elemento ( :: )
+Age nas classes, nos elementos, nos ids. Agem no conteúdo periférico do elemento. 
+
+
+    /*
+        #   = id
+        .   = class
+        :   = pseudo-class
+        ::  = pseudo-elemente
+        >   = children
+    */
+==================================================
+Capitulo: 15 - Modelo de caixas
+
+border: barda
+padding: acouxoamento /preenchimento ( espaço interno - fica dentro da border)
+
+margin: margem - espaço externo 
+
+outline: contorno/traçado fica dentro da margin
+
+
+TIPOS DE CAIXA ()
+
+
+BOX- LEVEL
+
+display: block;  = elemento do tipo box-level
+
+INLINE-LEVEL
+
+margin: auto; alinha a caixa no meio horizontalmente
+
+outline é configurado igual a border
+
+box-shadow: 6px 4px 7px 1px rgba(0, 0, 0, 0.699);
+no dev tool confira-se o blur e o spread
+
+box-shadow: inset 3px 3px 14px 6px rgba(0, 0, 0, 0.479); 
+o inset coloca borda dentro.
+no dev tool confira-se o blur e o spread
+
+border-radius: 10px; deixa a borda arredondada
+======================================================
+formatos de imagem:
+1 - JPEG.jpg: imagens com compaquitação melhor e grandes.
+2 - PNG: Imagens com fundo trasnparente e com a qualidade melhor.
+
+Tamanho para imagens 
+largura: 1500 para baixo
+
+O tamanho das imagens importa para um site? 
+(GIMP)
+https://www.youtube.com/watch?v=8rkuukKA8a4&list=PLHz_AreHm4dkZ9-atkcmcBaMZdmLHft8n&index=17
+
+Para colocar icone para sites é necessários a extensão ico
+
+(Gimp image cutting out)
+1 - layer
+2 - Trasnparency
+3 - Add Alpha Channel
+4 - Elipse Select Tool
+5 - Select 
+6 - Invert
+7 - Edit
+8 - Clear
+9 - Image
+10 - Zealous Crop
+11- Image - Scale image (choose size)
+12 - Export as...
+
+
+/*
+1 - Fazer testes gupy
+2 - estágio no gmail.com
+3 - javascript
+4 - HTML e CSS
+5 - Colocar exercícios 30 e 31 no GitHub
+6 - Pagar contas
+*/
+==================================================
+Planejando Sites
+
+1 - layout
+2 - fontes
+3 - cores
+
+mockflow
+
+resposividade no site: https://www.youtube.com/watch?v=WcGPSeuJDJ0&t=1088s
+
+div{}
+min-width: 280px
+max-width: 800px
+
+ou 
+div {}
+margin: auto;
+width: 55%;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes CSS</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            font-weight: normal;
+            /*light  - normal  - bold  - bolder*/
+            font-style: italic;
+            text-decoration: underline;
+        }
+
+
+        /*
+        Medidas Absolutas  
+        cm, mm, in, px, pt, pc
+        (centimentro milimetro polegada pixel ponto paica)    
+
+        Medidas Relativas
+        em, ex, rem, vw, vh, %
+        (altura m - altura x - em relativo ao root - largura da viewport - altura da viewport)
+        (referência o tamanho do 'm' e do 'x')
+        
+        
+        NOTA: A RECOMENDAÇÃO DA W3C É USAR  O 'px' E O 'em'
+        16px = 1em
+        */
+
+        h1 {
+            font: italic bolder 3em sans-serif;
+            /*
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bolder;
+            font-size: 2em;
+            font-style: italic;
+            */
+
+            /*shorthand font
+            ordem = font-style font-weight font-size font-family
+            
+            font: italic bolder 2em arial; 
+            */
+        }
+
+        h2 {
+            font: bold 2em arial
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>Trabalhando com Fontes</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum pariatur laudantium, dolore delectus beatae
+        similique! Excepturi rerum ut deserunt earum ipsum id? Nobis quaerat praesentium aliquid labore architecto
+        repudiandae rem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse recusandae alias vel nesciunt
+        explicabo minus? Repellat possimus animi consequuntur fuga hic, magni aliquid, aspernatur praesentium corrupti,
+        assumenda harum ab deleniti. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt aperiam nostrum
+        cumque iste dolor debitis? Eos iste quos accusantium perferendis, consectetur perspiciatis animi? Quibusdam
+        voluptates eaque similique impedit ipsa inventore.</p>
+
+    <h2>Subtítulo do exercício</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique voluptatum vel at ipsa soluta quo doloribus
+        magni reprehenderit error. Aliquid labore quod perferendis quam expedita deserunt quasi rem dolore pariatur.</p>
+</body>
+
+</html>

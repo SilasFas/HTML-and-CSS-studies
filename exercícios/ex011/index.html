@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML</title>
+</head>
+
+<body>
+    <h1>Imagem Dinânmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu
+        navegador.</p>
+
+    <picture>
+
+        <source media="(max-width: 750px)" srcset="imagens/photo-p.png" type="image/png">
+
+        <source media="(max-width: 1050px)" srcset="imagens/photo-m.png" type="image/png">
+
+        <img src="imagens/photo-g.png" alt="imagem flexível">
+
+        <!--A ordem é muito importante, sempre colocque a maior imagens por ultimo e a menor imagem primeiro.-->
+    </picture>
+
+    <h1>Reproduzindo Áudios</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5</p>
+    <audio src="midia/two-of-us.mp3" controls></audio>
+
+    <audio preload="metadata" controls loop>
+
+        <source src="midia/EstherAbrami.mp3" type="audio/mpeg">
+        <source src="midia/two-of-us.ogg" type="audio/ogg"><!--Esse arquivo não tem, É só demonstração-->
+        <source src="midia/two-of-us.wav" type="audio/wav">
+        <!--Esse arquivo não tem, é só demonstração. Evite usar wavpois é grande demais -->
+        <p>Infelizmente seu navegador não consegue reprodizir este áudio.</p>
+        <a href="midia/EstherAbrami.mp3">Clique aqui para baixar o arquivo.</a>
+
+    </audio>
+
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalbalhando com links</title>
+</head>
+
+<body>
+
+    <h1>Usando links externos</h1>
+    <p>Você pode acessar o meu <a href="https://github.com/SilasFas" target="_blank" rel="external">repositório público
+            no gitHub</a></p>
+    Abra o YouTube em uma nova aba clicando <a href="https://www.youtube.com/" target="_blank" rel="external">aqui</a>
+
+    <h1>Usanso links internos</h1>
+    <p>Esta é a primeira pagina do site. Se você quiser, pode acessar também a minha <a href="pag002.html" rel="next"
+            target="_self">segunda pagina.</a></p>
+
+    <p>Você também pode acessar a nossa <a href="noticias/pag03.html" rel="next" target="_self">página de notícias</a>
+    </p>
+
+    <h1>Links para download</h1>
+
+    <ul>
+        <li><a href="livros/meulivro.pdf" target="_blank" rel="external">Baixar o livro em PDF</a></li>
+        <!--O link acimma faz o arquivo ser aberto em uma nova guia para dowload-->
+
+
+        <li><a href="livros/meulivro.zip" download="meulivro.zip" type="application/zip">Livro compactado em ZIP</a>
+        </li>
+        <!--O link acima faz o arquivo ser baixado direto
+        Ou você utiliza o download ou o type. Não é preciso usar os 2. Lembrando que se o download é mais fácil de usar pois é só colocar o nome do arquivo completo-->
+    </ul>
+</body>
+
+</html>
