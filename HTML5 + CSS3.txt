@@ -1,4 +1,3 @@
-AI  - chat gpt
 ======================================================
 HTML5 + CSS3
 
@@ -309,31 +308,53 @@ ou
 div {}
 margin: auto;
 width: 55%;
+===================================================
+COLOCANDO IMAGEM DE FUNDO - capitulo 19
+
+        /*colocar cor sólida*/
+        div#q1 {
+            background-color: lightblue;
+        }
+
+        /*colocar um gradiente*/
+        #q2 {
+            background-image: linear-gradient(to bottom, yellow, red);
+        }
+
+        /*colocar uma imagem de fundo*/
+        #q3 {
+            background-image: url('imagens/pattern003.png');
+        }
+
+        /*colocar uma imagem de fundo*/
+        body {
+            background-image: url('imagens/wallpaper001.jpg');
+        }
 
 
+background-size: 100px 100px; (mexe no tamanho da imagem)
+background-repeat: repeat; (faz com que a imagem se repita) 
+background-repeat: no-repeat; (só coloca uma imagem)
+background-repeat: repeat-x;
+background-repeat: repeat-y;
+
+POSIÇÃO DA IMAGEM DE FUNDO
+
+Nas posições, primeiro vem a coluna depois a linha.
 
 
+        div#q1 {
+            background-position: left top;
+        }
 
+        div#q2 {
+            background-position: left center;
+        }
 
+        div#q3 {
+            background-position: right bottom;
+        }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        div#q4 {
+            background-position: center center;
+        }
