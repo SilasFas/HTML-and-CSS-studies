@@ -358,3 +358,16 @@ Nas posições, primeiro vem a coluna depois a linha.
         div#q4 {
             background-position: center center;
         }
+
+background-size: cover;
+/*background-size: contain;*/
+/*background-size: auto;*/
+/*background-size: 100% 100%;*/
+
+background-attachment: fixed; imagem fiada no fundo
+background-size: cover; imagem cobre todoa pagina
+
+shorthand - background
+color > image > position > repeat > [size] > attachment
+
+background: black url('imagens/wallpaper002.jpg') center center no-repeat fixed;
