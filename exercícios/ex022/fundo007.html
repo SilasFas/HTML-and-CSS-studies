@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pr-bt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento vertical</title>
+    <style>
+        #conteiner {
+            background-color: purple;
+            height: 500px;
+            padding: 10px;
+
+            position: relative;
+            /*needed to center*/
+
+        }
+
+        #conteudo {
+            height: 200px;
+            width: 400px;
+            background-color: yellow;
+
+            position: absolute;
+            /*needed to center*/
+            transform: translate(-50%, -50%);
+            /*needed to center*/
+            top: 50%;
+            /*needed to center*/
+            left: 50%;
+            /*needed to center*/
+            /*margin: auto;  === centraliza o conteudo na horizontal*/
+        }
+    </style>
+</head>
+
+<body>
+
+    <section id="conteiner">
+        <article id="conteudo">
+
+        </article>
+    </section>
+</body>
+
+</html>
