@@ -400,3 +400,7 @@ NOTA: TODO POSICIONAMENTO DE UM BOX POR PADRÃO É RELATIVO
             /*needed to center*/
             /*margin: auto;  === centraliza o conteudo na horizontal*/
         }
+
+
+text-transform: uppercase; ==> coloca todas as letras em maiusculas
+font-variant: small-caps; ==> coloca todas as letras em maiusculas, dando foco nas letras iniciais
