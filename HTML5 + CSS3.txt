@@ -424,7 +424,7 @@ border-collapse: collapse; juntas as linhas, retirando os espaços
     </tr>
 </table>
 
-
+vertical-align: bottom;  (bottom / top / middle)
 
 
 
