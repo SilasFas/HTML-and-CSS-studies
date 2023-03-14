@@ -16,6 +16,9 @@
         width: 450px;
         border-collapse: collapse;
         margin: auto;
+
+        position: relative;
+        /*fixar cabeçalho*/
     }
 
     caption {
@@ -37,20 +40,29 @@
         color: white;
     }
 
+    thead>tr>th {
+        position: sticky;
+        /*fixar cabeçalho*/
+        top: -1px;
+        /*fixar cabeçalho*/
+        background-color: gray;
+    }
+
     .number {
         text-align: right;
     }
 
     /*coloca efeito zebrado na tabela (coloca nas céluas pares)*/
-    tbody > tr:nth-child(even) { /* 2n*/
+    tbody>tr:nth-child(even) {
+        /* 2n*/
         background-color: lightgray;
     }
-    
+
     /*coloca efeito zebrado na tabela (coloca nas céluas impares)*/
-    tbody > tr:nth-child(odd) { /* 2n-1*/
+    tbody>tr:nth-child(odd) {
+        /* 2n-1*/
         background-color: white;
     }
-
 </style>
 
 <body>
