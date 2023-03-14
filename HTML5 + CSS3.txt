@@ -446,11 +446,16 @@ TFOOT = pé
         background-color: lightgray;
     }
 
+/*fixar cabeçalho*/
+position: relative;
 
+position: sticky;
+top: -1px;
 
+Mesclagem de Tabelas
 
-
-
+colspan="2"  === espanção de coluna
+rowspan="3" === espanção de linha
 
 
 
