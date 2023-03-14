@@ -406,7 +406,7 @@ text-transform: uppercase; ==> coloca todas as letras em maiusculas
 font-variant: small-caps; ==> coloca todas as letras em maiusculas, dando foco nas letras iniciais
 
 ======================================================
-CAPITULO 21 -- TABELAS - exercício 22
+CAPITULO 21 -- TABELAS - exercício 23
 
     <!--
         HIERARQUIA DE TABELAS (simples)
@@ -426,8 +426,19 @@ border-collapse: collapse; juntas as linhas, retirando os espaços
 
 vertical-align: bottom;  (bottom / top / middle)
 
+    <!--
+        ANATOMIA PARA TABELAS GRANDES
+        TABLE
+            THEAD
+                TR, TD, TH
+            TBODY
+                TR, TD, TH
+            TFOOT
+                TR, TD, TH
 
-
+THEAD = cabeçalho
+TBODY = corpo
+TFOOT = pé
 
 
 
