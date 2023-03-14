@@ -23,7 +23,6 @@
         font-weight: bold;
         padding: 10px;
         background-color: lightgray;
-
     }
 
     td,
@@ -41,6 +40,17 @@
     .number {
         text-align: right;
     }
+
+    /*coloca efeito zebrado na tabela (coloca nas céluas pares)*/
+    tbody > tr:nth-child(even) { /* 2n*/
+        background-color: lightgray;
+    }
+    
+    /*coloca efeito zebrado na tabela (coloca nas céluas impares)*/
+    tbody > tr:nth-child(odd) { /* 2n-1*/
+        background-color: white;
+    }
+
 </style>
 
 <body>

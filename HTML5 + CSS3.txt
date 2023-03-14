@@ -429,6 +429,7 @@ vertical-align: bottom;  (bottom / top / middle)
     <!--
         ANATOMIA PARA TABELAS GRANDES
         TABLE
+	    CAPTION
             THEAD
                 TR, TD, TH
             TBODY
@@ -440,6 +441,10 @@ THEAD = cabeçalho
 TBODY = corpo
 TFOOT = pé
 
+ /*coloca efeito zebrado na tabela (coloca nas céluas pares)*/
+    tbody > tr:nth-child(even) { /* 2n*/
+        background-color: lightgray;
+    }
 
 
 
