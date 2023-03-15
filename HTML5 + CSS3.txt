@@ -457,7 +457,3 @@ Mesclagem de Tabelas
 colspan="2"  === espanção de coluna
 rowspan="3" === espanção de linha
 
-
-
-
-
