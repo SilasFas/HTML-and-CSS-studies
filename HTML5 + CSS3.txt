@@ -457,3 +457,8 @@ Mesclagem de Tabelas
 colspan="2"  === espanção de coluna
 rowspan="3" === espanção de linha
 
+sempre quando colocar o th é importante colocar o escopo correto
+scope 'col'
+scope 'row'
+scope="colgroup"
+scope="rowgroup"
