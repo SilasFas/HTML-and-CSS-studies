@@ -480,9 +480,10 @@ ou
             <col class="c_prof">
         </colgroup>
 
+>>> Tabelas Responsivas - Tabelas em telas pequenas
 
-
-
-
-
-
+1 - Colocar toda a tabela dentro de uma div
+2 - criar uma class na div
+3 - colocar no CSS um overflow
+======================================================
+CAPITULO 22 
