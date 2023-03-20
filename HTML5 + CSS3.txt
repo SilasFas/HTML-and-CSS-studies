@@ -499,9 +499,14 @@ iframe = é um quadro onde posso colocar um outro site dentro do meu site. Algun
         height: 400px;
     }
 
+<li><a href="paginas-extras/pag001.html" target="silas">Premeira página</a></li>
 
+ <iframe src="" name="silas">
+        <p>Infelizmente seu navegador não é compativel</p>
+    </iframe>
 
-
+    <iframe src="" name="frame" srcdoc="<h1>Escolha uma das opções acima<h1/>">
+Eu posso excluir o srcdoc=" e criar uma pagina padrão de inicialização e linkar ela no src=''
 
 
 
