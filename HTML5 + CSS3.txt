@@ -486,4 +486,24 @@ ou
 2 - criar uma class na div
 3 - colocar no CSS um overflow
 ======================================================
-CAPITULO 22 
+CAPITULO 22 - **iframe**
+
+iframe = é um quadro onde posso colocar um outro site dentro do meu site. Alguns sites tem proteção, Portanto não pe possível usar com todos os sites.
+
+<iframe src="" frameborder="0"></iframe>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
