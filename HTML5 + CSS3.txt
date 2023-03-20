@@ -492,7 +492,12 @@ iframe = é um quadro onde posso colocar um outro site dentro do meu site. Algun
 
 <iframe src="" frameborder="0"></iframe>
 
+<!--Tamanho padrão 300px x 150px-->
 
+    iframe {
+        width: 400px;
+        height: 400px;
+    }
 
 
 
