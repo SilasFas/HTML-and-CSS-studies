@@ -557,6 +557,7 @@ Se for trabalhar com dados e senhas o ideal é usar o https
         </p>
     </form>
 
+<!-- 
 required (faz o campo ser obrigatório)
 minlength="8" (para letras)
 maxlength="20" (para letras)
@@ -567,10 +568,8 @@ autocomplete="current-password">
 step="0.01" pulos de decimais para o input number
 min="0" (para números)
 max="10" (para números)
-
-
-
-
+value="5" estabelce um valor
+-->
 
 
 
