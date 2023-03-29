@@ -558,11 +558,18 @@ Se for trabalhar com dados e senhas o ideal é usar o https
     </form>
 
 required (faz o campo ser obrigatório)
-minlength="8" 
-maxlength="20" 
-size="10" (tamnho da caixa)
+minlength="8" (para letras)
+maxlength="20" (para letras)
+size="10" (tamanho da caixa)
 placeholder="mínimo 8 digitos...
 autocomplete="current-password">
+
+step="0.01" pulos de decimais para o input number
+min="0" (para números)
+max="10" (para números)
+
+
+
 
 
 
