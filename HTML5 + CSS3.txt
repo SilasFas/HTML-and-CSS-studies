@@ -601,7 +601,33 @@ value="5" estabelce um valor
 
 </html>
 
+    <fieldset>
+    <fieldset>
+        <legend>Sexo</legend>
+        <input type="radio" name="sexo" id="masculino" value="M">
+        <label for="masculino">Masculino</label> <br>
 
+        <input type="radio" name="sexo" id="feminino" value="F">
+        <label for="feminino">Feminino</label>
+    </fieldset>
+>>> todo botão de raio o id deve ser diferênte porem O NAME PRECISA SER IGUAL.
+
+<fieldset>
+        <legend>Esporte favoritos</legend>
+
+        <input type="checkbox" name="basquete" id="basquete">
+        <label for="basquete">Basquete</label> <br>
+
+        <input type="checkbox" name="futebol" id="futebol" checked>
+        <label for="futebol">Futebol</label> <br>
+
+        <input type="checkbox" name="natacao" id="natacao">
+        <label for="natacao">Natação</label> <br>
+
+        <input type="checkbox" name="tenis" id="tenis">
+        <label for="tenis">Tênis</label> <br>
+    </fieldset>
+>>> CHECKED já deixa uma opção marcada
 
 
 
