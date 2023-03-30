@@ -629,7 +629,28 @@ value="5" estabelce um valor
     </fieldset>
 >>> CHECKED já deixa uma opção marcada
 
+    <p>
+        <label for="icor">Cor: </label>
+        <input type="color" name="cor" id="icor" value="#00ff00">
+    </p>
 
+    <p>
+        <!--
+            começa de 0 e vai até 100
+            pode ser mudado a partir do value
+            pode colocar valor min e max
+        -->
+        <label for="inivel">Nível de satisfação</label>
+        <input type="range" name="nivel" id="inivel" value="7" min="5" max="10">
+    </p>
+
+    <p>
+        <!--
+            Sempre quando for usar esse elemento é preciso mudar o método para POST, a foto é maior do que 3000 bytes.
+        -->
+        <label for="ifoto">Foto do perfil: </label>
+        <input type="file" name="foto" id="ifoto">
+    </p>
 
 
 
