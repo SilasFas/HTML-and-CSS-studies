@@ -508,7 +508,7 @@ iframe = é um quadro onde posso colocar um outro site dentro do meu site. Algun
     <iframe src="" name="frame" srcdoc="<h1>Escolha uma das opções acima<h1/>">
 Eu posso excluir o srcdoc=" e criar uma pagina padrão de inicialização e linkar ela no src=''
 ======================================================
-CAPITULO 23 - **iframe**
+CAPITULO 24 - **Formulários**
 
     <form>
         <p>Nome: <input type="text" name="nome" id="nome"></p>
@@ -651,6 +651,24 @@ value="5" estabelce um valor
         <label for="ifoto">Foto do perfil: </label>
         <input type="file" name="foto" id="ifoto">
     </p>
+
+
+
+======================================================
+CAPITULO 25 - **Media Query**
+
+>>> Media type: screen and print
+
+    <link rel="stylesheet" href="estilos/tela.css" media="screen">
+    <link rel="stylesheet" href="estilos/impressora.css" media="print">
+
+
+
+
+
+
+
+
 
 
 
