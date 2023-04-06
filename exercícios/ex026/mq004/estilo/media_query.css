@@ -2,6 +2,154 @@
 
 /* Todas as demais mídias */
 
+/*
+Typical Device Breakpoints - 2023
+--------------------------
+There are tons of screens and devices with different heights and widths, so it is hard to create an exact breakpoint for each device. To keep things simple you could target five common groups:
+
+Extra small devices (phones, 600px and down)
+@media only screen and (max-width: 600px) {...}
+
+Small devices (portrait tablets and large phones, 600px and up)
+@media only screen and (min-width: 600px) {...}
+
+Medium devices (landscape tablets, 768px and up)
+@media only screen and (min-width: 768px) {...}
+
+Large devices (laptops/desktops, 992px and up)
+@media only screen and (min-width: 992px) {...}
+
+Extra large devices (large laptops and desktops, 1200px and up)
+@media only screen and (min-width: 1200px) {...}
+*/
+
+/*impressão*/
 @media print {
-    
+
+    * {
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    body {
+        background-image: url(../imagens/back-print.jpg);
+        /*desnecessário pois não dá para imprimir background na impressora*/
+    }
+
+    main {
+        border: 2px solid black;
+        width: 70vw;
+        text-align: center;
+    }
+
+    main h1 {
+        text-shadow: none;
+        color: black;
+    }
+
+    main::after {
+        content: 'Essa versão não contem todos os dados originais';
+        text-decoration: overline;
+    }
+
+    #phone {
+        display: none;
+    }
+
+    #tablet {
+        display: none;
+    }
+
+    #print {
+        display: block;
+    }
+
+    #pc {
+        display: none;
+    }
+
+    #tv {
+        display: none;
+    }
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    body {
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+
+    #phone {
+        display: none;
+    }
+
+    #tablet {
+        display: block;
+    }
+
+    #print {
+        display: none;
+    }
+
+    #pc {
+        display: none;
+    }
+
+    #tv {
+        display: none;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    body {
+        background-image: url(../imagens/back-pc.jpg);
+    }
+
+    #phone {
+        display: none;
+    }
+
+    #tablet {
+        display: none;
+    }
+
+    #print {
+        display: none;
+    }
+
+    #pc {
+        display: block;
+    }
+
+    #tv {
+        display: none;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    body {
+        background-image: url(../imagens/back-tv.jpg);
+    }
+
+    #phone {
+        display: none;
+    }
+
+    #tablet {
+        display: none;
+    }
+
+    #print {
+        display: none;
+    }
+
+    #pc {
+        display: none;
+    }
+
+    #tv {
+        display: block;
+    }
 }
