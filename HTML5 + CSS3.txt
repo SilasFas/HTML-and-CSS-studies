@@ -695,7 +695,8 @@ Extra large devices (large laptops and desktops, 1200px and up)
 @media only screen and (min-width: 1200px) {...}
 */
 ======================================================
-**FLEXBOX CSS**
+**FLEXBOX CSS** (Ver ex27 - flexbox)
+**Estilizando em grupo**
 
 EIXO X
 EIXO Y
@@ -765,7 +766,37 @@ gap: 70px;
 gap: 10px 70px;
 row-gap: 10px;
 column-gap: 10px;
+==============================
+**FLEXBOX PARTE INTERNA**
+**Estilizando individualmente**
 
+1ª propriedade 
+order
+order: 0; (order1; order1; etc...)
+
+2ª propriedade 
+flex-grow
+
+flex-grow: 0; (flex-grow: 1; flex-grow: 2;etc)
+
+3ª propriedade 
+
+flex-shrink: 0;
+div pai precisa ter uma width máxima
+div pai não pode ter o wrap
+
+4ª propriedade 
+Define o tamanho dos itens tanto de altura como de largura.
+
+flex-basis: auto; 
+flex-basis: 0;
+
+5ª propriedade
+shorthand para=> flex-grow: 1; flex-shrink: 1; flex-basis: auto;
+flex 0 1 auto;
+
+6ª propriedade
+align-self: flex-end;
 
 
 

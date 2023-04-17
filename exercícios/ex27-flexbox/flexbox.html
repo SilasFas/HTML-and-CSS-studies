@@ -24,20 +24,18 @@
             margin-right: 10px;
             border: 5px solid black;
 
+
             display: flex;
             flex-direction: row;
             justify-content: center;
             align-items: center;
-            flex-wrap: inherit;
-            flex-wrap: wrap;
+            flex-wrap: nowrap;
             align-content: center;
             gap: 10px 50px;
         }
 
         #bloco {
-            padding: 15px;
-            width: 100px;
-            height: 100px;
+
             text-align: center;
             border-radius: 10px;
         }
@@ -45,16 +43,30 @@
         .bloco1 {
             background-color: aqua;
             font-size: 30px;
+            order: 0;
+            flex-shrink: 1;
+            flex-grow: 1;
+            flex-basis: auto;
+
         }
 
         .bloco2 {
             background-color: purple;
             font-size: 30px;
+            order: 0;
+            flex-grow: 1;
+            flex-shrink: 1;
+            flex-basis: auto;
+            align-self: flex-end;
         }
 
         .bloco3 {
             background-color: blue;
             font-size: 30px;
+            order: 0;
+            flex-shrink: 1;
+            flex-grow: 2;
+            flex-basis: auto;
         }
     </style>
 </head>
@@ -65,7 +77,7 @@
         <div class="bloco1" id="bloco">1</div>
         <div class="bloco2" id="bloco">2</div>
         <div class="bloco3" id="bloco">3</div>
-        <div class="bloco1" id="bloco">4</div>
+        <!-- <div class="bloco1" id="bloco">4</div>
         <div class="bloco2" id="bloco">5</div>
         <div class="bloco3" id="bloco">6</div>
         <div class="bloco1" id="bloco">7</div>
@@ -78,7 +90,7 @@
         <div class="bloco2" id="bloco">14</div>
         <div class="bloco3" id="bloco">15</div>
         <div class="bloco1" id="bloco">16</div>
-        <div class="bloco2" id="bloco">17</div>
+        <div class="bloco2" id="bloco">17</div> -->
     </main>
 
 </body>
