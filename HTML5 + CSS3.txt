@@ -694,6 +694,84 @@ Large devices (laptops/desktops, 992px and up)
 Extra large devices (large laptops and desktops, 1200px and up)
 @media only screen and (min-width: 1200px) {...}
 */
+======================================================
+**FLEXBOX CSS**
+
+EIXO X
+EIXO Y
+
+
+no container {
+	display: flex
+}
+
+
+1ª propriedade 
+
+flex-direction: row; (por padrão)
+flex-direction: row-reverse;
+flex-direction: column;
+flex-direction: column reverse;
+
+2ª propriedade 
+justify-content
+Alinha os elementos ao longo do eixo principal
+
+justify-content: flex-start;
+justify-content: flex-end;
+justify-content: center;
+justify-content: space-between;
+justify-content: space-around;
+
+3ª propriedade 
+align-items
+Alinha os elementos ao longo do eixo secundário/perpendicular (isto é apenas em uma linha)
+
+align-items: flex-start;
+align-items: center;
+align-items: flex-end;
+align-items: stretch; (não pode ter um height definido para funciona)
+align-items: baseline; (o font-size precisa ser diferente para cada div)
+
+4ª propriedade 
+
+flex-wrap: nowrap;
+flex-wrap: wrap;
+flex-wrap: wrap-reverse;
+
+5ª propriedade 
+flex-flow:
+Coloca flex-direction e flex-wrap justos
+
+flex-flow: row wrap;
+
+6ª propriedade 
+align-content: 
+
+Alinha os elementos em mais de uma linha (sempre quando esta usando o wrap)
+
+align-content: flex-start;
+align-content: center;
+align-content: flex-end;
+align-content: space-between;
+align-content: space-around;
+
+7ª propriedade 
+
+gap, row-gap e column-gap
+
+gap => configura o eixo x e y.
+gap: 70px;
+gap: 10px 70px;
+row-gap: 10px;
+column-gap: 10px;
+
+
+
+
+
+
+
 
 
 
